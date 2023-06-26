@@ -1,7 +1,13 @@
 import React from 'react';
 import { Options } from './Options.styled';
 
-const Statistics = ({ good, neutral, bad, total, positivePercentage }) => (
+export const Statistics = ({
+  good,
+  neutral,
+  bad,
+  total,
+  positivePercentage,
+}) => (
   <div>
     <Options>Good: {good}</Options>
     <Options>Neutral: {neutral}</Options>
@@ -10,5 +16,3 @@ const Statistics = ({ good, neutral, bad, total, positivePercentage }) => (
     <Options>Positive feedback: {positivePercentage}%</Options>
   </div>
 );
-
-export default Statistics;
